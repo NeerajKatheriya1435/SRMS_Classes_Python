@@ -79,34 +79,34 @@ import time
 
 # asyncio.run(main())
 
-from multiprocessing import Process
+# from multiprocessing import Process
 
-def calculate_square(numbers):
-    print("Squares:")
-    for n in numbers:
-        print(f"{n}^2 = {n*n}")
+# def calculate_square(numbers):
+#     print("Squares:")
+#     for n in numbers:
+#         print(f"{n}^2 = {n*n}")
 
-def calculate_cube(numbers):
-    print("Cubes:")
-    for n in numbers:
-        print(f"{n}^3 = {n*n*n}")
+# def calculate_cube(numbers):
+#     print("Cubes:")
+#     for n in numbers:
+#         print(f"{n}^3 = {n*n*n}")
 
-if __name__ == "__main__":
-    nums = [2, 3, 4, 5]
+# if __name__ == "__main__":
+#     nums = [2, 3, 4, 5]
 
-    # Create processes
-    p1 = Process(target=calculate_square, args=(nums,))
-    p2 = Process(target=calculate_cube, args=(nums,))
+#     # Create processes
+#     p1 = Process(target=calculate_square, args=(nums,))
+#     p2 = Process(target=calculate_cube, args=(nums,))
 
-    # Start processes
-    p1.start()
-    p2.start()
+#     # Start processes
+#     p1.start()
+#     p2.start()
 
-    # Wait for processes to finish
-    p1.join()
-    p2.join()
+#     # Wait for processes to finish
+#     p1.join()
+#     p2.join()
 
-    print("Done with multiprocessing!")
+#     print("Done with multiprocessing!")
 
 
 
